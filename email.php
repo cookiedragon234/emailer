@@ -63,7 +63,4 @@ write('Correct Password, ');
 	write('Password Failed<br>');
 	$mail = '<div style="color:red">Incorrect Password. We use a password to prevent spamming or illegal usage</div>';
 }
-
-// Tell the user the result if the form was submitted
-if(isset($mail)){write($mail);}
 ?>
