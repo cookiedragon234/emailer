@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Email Sender</title>
+    <meta charset="UTF-8" />
+    <style>
+		  .input{
+			  width: 300px;
+		  }
+		</style>
+	</head>
+	<body>
+		<form action="email.php" method="post">
+			<table border="0">
+				<tr>
+					<td>To (Name): </td>
+					<td><input class="input" type="text" name="to"></td>
+				</tr>
+				<tr>
+					<td>Fake From Email: </td>
+					<td><input class="input" type="text" name="from" required></td>
+				</tr>
+				<tr>
+					<td>Fake From Name: </td>
+					<td><input class="input" type="text" name="fromname" required></td>
+				</tr>				
+				<tr>
+					<td>To (Email): </td>
+					<td><input class="input" type="text" name="replyto" required></td>
+				</tr>	
+				<tr>
+					<td>Subject: </td>
+					<td><input class="input" type="text" name="subject" required></td>
+				</tr>
+				<tr>
+					<td>Message: </td>
+					<td><textarea class="input" name="message" required></textarea></td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td><input class="input" type="password" name="password" required></td>
+				</tr>
+				<tr>
+					<td><label for="debugbut">Debug?</label></td>
+					<td><input class="input" id="debugbut" type="checkbox" name="debug"></td>
+				<tr>	
+				<tr>
+					<td>
+						<input class="input" type="submit" value="Send Email" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html> 
