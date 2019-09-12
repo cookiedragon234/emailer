@@ -63,4 +63,5 @@ write('Correct Password, ');
 	write('Password Failed<br>');
 	$mail = '<div style="color:red">Incorrect Password. We use a password to prevent spamming or illegal usage</div>';
 }
+json_encode($mail);
 ?>
